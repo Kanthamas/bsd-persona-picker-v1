@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>BSD Persona Picker</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stripe"></div>
+    <header>
+      <a href="#" aria-label="BSD Education"
+        ><img
+          class="lg-l"
+          src="https://app.bsd.education/res/1f82117e-c3cb-47fe-bb68-192b20b40484/bsd-education.svg"
+          alt="bsd education" /><img
+          class="lg-d"
+          src="https://app.bsd.education/res/1f82117e-c3cb-47fe-bb68-192b20b40484/bsd-education-white.svg"
+          alt="bsd education"
+      /></a>
+      <div class="ctl">
+        <div class="seg" role="group" aria-label="Language">
+          <button id="l0" aria-pressed="true">EN</button
+          ><button id="l1" aria-pressed="false">TH</button>
+        </div>
+        <button id="th" aria-label="Light / Dark">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle
+              cx="12"
+              cy="12"
+              r="9"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <h1 id="h1"></h1>
+      <p class="sub" id="sub"></p>
+      <div class="status">
+        <span class="pill" id="cnt" aria-live="polite"></span
+        ><span class="note" id="hint"></span>
+      </div>
+      <section id="pick" hidden></section>
+      <div class="grid" id="grid"></div>
+    </main>
+    <a
+      id="bb"
+      href="https://app.bsd.education/share/o/vthv3wgp/"
+      target="_blank"
+      rel="noopener noreferrer"
+    ></a>
+    <dialog id="dlg" aria-labelledby="dt"></dialog>
+    <script src="script.js" defer></script>
+  </body>
+</html>
